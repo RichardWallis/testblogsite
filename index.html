@@ -1,0 +1,19 @@
+---
+layout: default
+title: 
+---
+
+<h1>Welcome to the Schema.org Blog</h1>
+
+<p>Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah </p>
+
+</br/>
+<hr width="75%">
+<b>Latest Post:</b>
+
+{% for post in site.posts limit:1 %}
+<h1>{{ post.title }}</h1>
+<p>By {{ post.author }} - {{ post.date | date: "%Y-%m-%d"}}</p>
+
+{{ post.content  }}
+{% endfor %}
