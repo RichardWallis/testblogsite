@@ -10,10 +10,11 @@ title:
 </br/>
 <hr width="75%">
 <b>Latest Post:</b>
-
+<div class="home-post">
 {% for post in site.posts limit:1 %}
 <h1>{{ post.title }}</h1>
-<p>By {{ post.author }} - {{ post.date | date: "%Y-%m-%d"}}</p>
+<div>By {{ post.author }} - {{ post.date | date: "%Y-%m-%d"}}</div>
 
 {{ post.content  }}
 {% endfor %}
+</div>

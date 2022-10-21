@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <title>Blog.Schema.org - COVID-19 schema for CDC hospital reporting</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="Blog.Schema.org the official blog for Schema.org." />
+<link rel="shortcut icon" type="image/png" href="/assets/images/favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="https://schema.org/docs/schemaorg.css" />
+
+  <link rel="stylesheet" href="/assets/css/custom.css">
+<script>
+function navFunction() {
+  var targets = document.getElementsByClassName("mobnav");
+  for(var i=0; i < targets.length;i++){
+    targets[i].classList.toggle("show");
+  }
+}
+
+</script
+</head>
+<body>
+  <div id="main">
+<div id="container">
+  <div id="headerwrap">
+    <div id="pagehead1" class="mobnav">
+      <div class="header-block" id="pagehead-left">
+        <div id="sitename2">
+          <a href="/">Blog.Schema.org</a>
+        </div>
+        <div id="navicon2">
+          <a href="javascript:void(0);" class="icon" onclick="navFunction()"><img height="40" alt="menu" src="https://schema.org/docs/menu-bar-icon-white.png"></a>
+        </div>
+      </div>
+      <div  class="header-block header-block-right mobnav" id="pagehead-mid">
+        <div id="selectionbar2">
+          <ul>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/blog">Blog</a>
+          </li>
+            <li>
+              <a href="https://schema.org">Schema.org</a>
+            </li>
+          </ul>
+        </div> <!-- selectionbar -->
+      </div>
+      <div  class="header-block header-block-right mobnav" id="pagehead-right">
+        <div id="cse-search-form2">
+            <div class="gcse-searchbox-only" data-resultsUrl="/search_results"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+ 
+    <main id="mainContent">
+    <br/>
+    <h1>COVID-19 schema for CDC hospital reporting</h1>
+            <div>By @danbri - 2020-04-06</div>
+
+<div dir="ltr" style="text-align: left;" trbidi="on"><span style="font-family: sans-serif; font-size: 12.8px;">The COVID-19 pandemic requires various medical and government authorities to aggregate</span><span style="font-family: sans-serif; font-size: 12.8px;">&nbsp;data about available resources from a wide range of medical facilities.</span><span style="font-family: sans-serif; font-size: 12.8px;">&nbsp;Clearly standard schemas for this structured data can be very useful.</span><br /><br style="font-family: sans-serif; font-size: 12.8px;" /><span style="font-family: sans-serif; font-size: 12.8px;">The Centers for Disease Control (CDC) in the U.S. defined a set of data fields to facilitate exchange&nbsp;</span><span style="font-family: sans-serif; font-size: 12.8px;">of this data. We are introducing <a href="https://schema.org/docs/cdc-covid.html">a Schema.org representation</a> of these data fields.&nbsp;</span><br /><br style="font-family: sans-serif; font-size: 12.8px;" /><span style="font-family: sans-serif; font-size: 12.8px;">The purpose of this schema definition is to provide a standards-based representation that can be used to encode and exchange records that correspond to the <a href="https://www.cdc.gov/nhsn/pdfs/covid19/import-covid19-data-508.pdf">CDC format</a>, with usage within the U.S. primarily in mind. While the existence of this schema may provide additional implementation options for those working with US hospital reporting data about COVID-19, please refer to the <a href="https://www.cdc.gov/nhsn/acute-care-hospital/covid19/index.html">CDC</a> and other appropriate bodies for authoritative guidance on the latest reporting workflows and data formats.</span><br /><span style="font-family: sans-serif; font-size: 12.8px;"><br /></span><span style="font-family: sans-serif; font-size: 12.8px;">Depending upon</span><span style="font-family: sans-serif; font-size: 12.8px;">&nbsp;context, any of the formats and standards that work with Schema.org may be applicable for encoding this data, including the Microdata, RDFa and JSON-LD data formats, as well as related technologies such as W3C SPARQL for data query. JSON-LD is in most cases likely to be the most appropriate format. There is no assumption that data encoded using this schema should necessarily be published on the public Web, nor that it would be used by search engines.</span><br /><br style="font-family: sans-serif; font-size: 12.8px;" /><span style="font-family: sans-serif; font-size: 12.8px;">We will continue to improve this vocabulary in the light of </span><a href="https://github.com/schemaorg/schemaorg/issues/2521" style="font-family: sans-serif; font-size: 12.8px;">feedback</a><span style="font-family: sans-serif; font-size: 12.8px;">, and welcome <a href="https://docs.google.com/document/d/14ikaGCKxo50rRM7nvKSlbUpjyIk2WMQd3IkB1lItlrM/edit#heading=h.5h19yhvfnjve">suggestions</a> for improvements and additions particularly from US healthcare organizations who are using it.&nbsp;</span><span style="font-family: sans-serif; font-size: 12.8px;">This CDC-based vocabulary follows other recent changes we have made to <a href="https://schema.org/">Schema.org</a>. For details of recent changes see our <a href="http://schema.org/docs/releases.html#v7.03">release notes</a>&nbsp;and our <a href="http://blog.schema.org/2020/03/schema-for-coronavirus-special.html">previous post </a>announcing the <a href="https://schema.org/SpecialAnnouncement">SpecialAnnouncement</a> markup, which is now supported at both Bing (<a href="https://blogs.bing.com/webmaster/march-2020/Bing-adopts-schema-org-mark-up-for-Special-Announcements-about-COVID-19">blog</a>, <a href="https://www.bing.com/webmaster/help/special-announcement-specifications-5cbd6249">docs</a>) and Google (<a href="https://webmasters.googleblog.com/2020/04/highlight-covid-19-announcements-search.html">blog</a>, <a href="https://developers.google.com/search/docs/data-types/special-announcements">docs</a>). As the global response to COVID-19 evolves we will do our best to improve schema.org's vocabularies to represent the changes that Coronavirus is bringing to society, and to assist those using structured data to help with the response.</span><br /><span style="font-family: sans-serif; font-size: 12.8px;"><br /></span><span style="font-family: sans-serif; font-size: 12.8px;"><br /></span></div>
+    </main>
+
+    <footer id="main-footer">
+    </footer>
+  </div>
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-52672119-1', 'auto');
+  ga('send', 'pageview');
+
+(function() {
+var cx = '013516846811604855281:nj5laplixaa'; // Insert your own Custom Search engine ID here
+var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
+})()
+
+</script>
+</body>
+</html>

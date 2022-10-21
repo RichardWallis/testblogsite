@@ -1,0 +1,72 @@
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+
+handlers:
+- url: /assets/js/(.*\.js)
+  mime_type: text/javascript
+  static_files: _site/assets/js/\1
+  upload: _site/assets/js(.*\.js)
+
+- url: /assets/images/(.*\.jpg)
+  static_files: _site/assets/images/\1
+  upload: _site/assets/images/(.*\.jpg)
+
+- url: /assets/images/(.*\.png)
+  static_files: _site/assets/images/\1
+  upload: _site/assets/images/(.*\.png)
+
+- url: /assets/images/(.*\.ico)
+  static_files: _site/assets/images/\1
+  upload: _site/assets/images/(.*\.ico)
+
+- url: /assets/css/(.*\.css)
+  mime_type: text/css
+  static_files: _site/assets/css/\1
+  upload: _site/assets/css(.*\.css)
+
+- url: /
+  static_files: _site/index.html
+  upload: _site/index.html
+
+- url: /blog
+  static_files: _site/blog.html
+  upload: _site/blog.html
+
+- url: /search_results
+  static_files: _site/search_results.html
+  upload: _site/search_results.html
+
+- url: /posts/(.*)
+  static_files: _site/posts/\1.html
+  upload: _site/posts/(.*).html
+
+#Paths from old blog posts
+- url: /20[12]/[01][0-9]/(.*).html
+  static_files: _site/posts/\1.html
+  upload: _site/posts/(.*).html
+
+- url: /(.+)/
+  static_files: _site/\1/index.html
+  upload: _site/(.+)/index.html
+  expiration: "15m"
+
+- url: /(.+)
+  static_files: _site/\1/index.html
+  upload: _site/(.+)/index.html
+  expiration: "15m"
+
+- url: /posts/(.*)$
+  static_files: _site/posts/\1.html
+  upload: _site/posts/(.*).html$
+
+- url: /(.*)$
+  static_files: _site/\1.html
+  upload: _site/(.*).html$
+
+#- url: /((tags)|(archive)|(about)|(posts)|(fonts))/
+
+libraries:
+- name: webapp2
+  version: "2.5.2"

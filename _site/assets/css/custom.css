@@ -1,3 +1,18 @@
+.home-post {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 2px;
+    background-color: ivory;
+    border: 1px solid darkgrey;
+    border-radius: 7px;
+    box-shadow: 2px 2px;
+}
+
+h2 {
+    margin: 1em 0 0 0;
+}
+
 .tab {
     display: flex;
     flex-wrap: wrap;
