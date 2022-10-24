@@ -13,8 +13,8 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "Schema.org Docs"
-description: Schema.org Documentation
+title: "Blog.Schema.org"
+description: Schema.org Blog
 url: "https://blog.schema.org"
 github_username:  schemaorg
 

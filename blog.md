@@ -10,7 +10,7 @@ title:  "Blog"
         {{ post.title }}
       </a>
     </h2>
-    <time style="font-style: italic;" datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
+    <time style="font-style: italic;" datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time> &mdash; {{ post.author }}
   </li>
 {% endfor %}
 </ul>
